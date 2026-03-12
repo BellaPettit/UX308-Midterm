@@ -1,16 +1,25 @@
-import {Hello} from './Hello.jsx';
-import { SnowRemoval } from './SnowRemoval.jsx';
-import {
-  View,
-} from 'react-native';
+import { View } from "react-native";
+
+import CoinTotalView from "./CoinTotalView";
+import FahrenheitToCelsiusView from "./FahrenheitToCelsiusView";
+import CubeVolumeView from "./CubeVolumeView";
+import GymMembershipCostView from "./GymMembershipCostView";
+import EarthquakeDamageView from "./EarthquakeDamageView";
 
 export default function App() {
   return (
     <View>
-      <Hello name="Rich" />
-      <Hello />
-      <Hello name="Biff" />
-      <SnowRemoval cm={3} />
+
+      <CoinTotalView />
+
+      <FahrenheitToCelsiusView />
+
+      <CubeVolumeView />
+
+      <GymMembershipCostView />
+
+      <EarthquakeDamageView />
+
     </View>
   );
 }
